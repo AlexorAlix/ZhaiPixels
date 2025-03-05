@@ -1,0 +1,532 @@
+/* MAIN PAGE */
+body {
+    background-color:#ffffff ;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #c4af93;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.portfolio-content h2 {
+    text-align: right; /* Align to the left */
+    margin-left: 10px; /* Add left spacing */
+}
+
+/* JASON ZHAI */
+.home-link {
+    text-decoration: none; /* Remove underline from link */
+}
+
+.home-link p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 24px; 
+    font-weight: 600; 
+    color: #80622a; 
+    margin: 0; 
+    padding: 0; 
+    letter-spacing: -0.5px; 
+    transition: color 0.3s ease; 
+}
+
+.home-link:hover p {
+    color: #8d6a3b;
+
+}
+
+/* Navbar Styles */
+header {
+    background-color: #ffffff;
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+    font-size: larger;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8d6a3b;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #8d6a3b;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgba(110, 90, 72, 0.753);
+    text-decoration: none;
+}
+
+
+/* Image Styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image-grid div {
+    flex: 1;
+    margin: 5px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-grid img {
+    width: 65%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+/* For the pop-out effect */
+.image-wrapper img {
+    opacity: 1;
+    transform: scale(1); 
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; 
+}
+
+.image-wrapper img:hover {
+    transform: scale(1.2);
+    opacity: 1; 
+}
+
+/* Image Text Styles */
+.image-text-container {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+.image-wrapper {
+    position: relative; 
+    display: inline-block; 
+}
+.image-wrapper h2 {
+    position: absolute; 
+    top: 45%; 
+    right: 130px; 
+    transform: translateY(-50%); 
+    padding: 5px 10px; 
+
+}
+/* Footer Styles */
+footer {
+    background-color: #c5b197;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* social links */
+
+footer .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2e200e8c;
+}
+
+footer .social-links a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    font-size: 0.9em;
+    color: #1b14058e;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* ABOUT ME PAGE */  
+.about {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About Heading */
+.about-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+  
+    
+}
+
+.about-heading h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+/* Ensure image and text are in a row */
+.about-container {
+    display: flex;
+    align-items: flex-start; /* Aligns text with top of image */
+    justify-content: flex-start; /* Align content more to the right */
+    gap: 80px; /* Adjust spacing between image and text */
+}
+/* Image Container */
+.about-image-container {
+    flex: 1;
+    max-width: 420px;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Content */
+.about-text {
+    flex: 2;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-left: 50px; /* Moves text further to the right */
+    margin-top: 0; /* Removes any extra margin */
+}
+
+
+/* CONTACT PAGE*/
+
+.header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.contact-form {
+    margin: auto;
+    /*putting margin on auto centered the form horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex 1 makes main content expand to push down the footer to bototm of page*/
+    flex: 1;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background-color: #6b4a1e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #b4a655;
+}
+
+
+html, body {
+    /*height being 100% makes page full height */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* PROJECTS PAGE */
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 30px 0 15px;
+}
+
+/* Gallery */
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
+
+.grid-item {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* PROJECTS PAGE  from here below is all new code i added _bufan */
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 30px 0 15px;
+}
+
+/* Gallery */
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.grid-container img {
+    width:  auto; 
+    height: 600px; 
+    object-fit: cover; /* Ensure they stay well-fitted */
+    border-radius: 20px; 
+    margin: 15px 0; /* Space between images */
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-container img:hover {
+    transform: scale(1.05);
+}
+
+.grid-item {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+
+/*night back to projects button*/
+.back-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-button a:hover {
+    background-color: #555;
+}
+
+
+/* night page photo*/
+.night-img-container {
+    text-align: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.night-img-container img {
+    max-width: 80%; 
+    height: auto; 
+    margin: 10px 0; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+/* PROJECTS PAGE  from here below is all new code i added _bufan */
+h1, h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 30px 0 15px;
+}
+/* project page css     */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Space between items */
+    padding: 40px; /* Space from page edges */
+    justify-items: center;
+}
+
+.grid-item {
+    text-align: center;
+    width: 100%;
+    max-width: 300px; /* Consistent size */
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius:  10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.grid-item h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 per row on small screens */
+    }
+}
+
+
+
+
+
+/*all back to projects button*/
+.back-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-button a:hover {
+    background-color: #555;
+}
+/* all page photo*/
+
+
+
+.night-img-container {
+    text-align: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.night-img-container img {
+    max-width: 80%; 
+    height: auto; 
+    margin: 10px 0; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+
